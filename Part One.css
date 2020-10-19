@@ -1,0 +1,25 @@
+/*Anything between is a comment*/
+
+
+/*selected tag {*/
+
+	/*property:value;*/
+/*}*/
+/**/
+
+h1{
+	color:blue;
+}
+
+li{
+	color:rgb(255,100,0); /*rgb*/
+}
+
+p{
+	color:#34eb71; /*hex code*/
+}
+
+
+h4{
+	color:rgba(255,100,0,0.5); /* a means alpha (0-1), 1 fully opaque, 0 fully transparent*/
+}

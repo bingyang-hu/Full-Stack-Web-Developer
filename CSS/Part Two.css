@@ -1,0 +1,21 @@
+body{
+	background-color: url("shoe.JPG");
+}
+
+
+div{
+	background-color: white;
+	border-color:blue;
+	border-width:thick;
+	border-style: dotted;
+}
+
+
+p{
+	color:green;
+}
+
+span{
+	background-color: red;
+	color:black;
+}

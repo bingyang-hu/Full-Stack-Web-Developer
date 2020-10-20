@@ -1,0 +1,33 @@
+.firstDiv{
+	color:red;
+}
+.secondDiv{
+	color:yellow;
+}
+
+#singledout{
+	color:pink;
+	text-decoration: line-through;
+}
+
+ /*  "*" used to select every element on the page*/
+
+*{
+	color:black;
+}
+
+/*It will overwrite the class but not the id.*/
+
+h3 +ul{  /* "+" is used to select all ul tags near h3 tag*/
+	border:4px dotted purple;
+}
+
+
+li a {   /* select all anchor tag in the list*/
+	color:red;
+}
+
+li a[href="www.npr.org"]{ /* to select a paticular anchor tag whose href is npr*/
+	color:blue;
+	border:2px solid orange;
+}

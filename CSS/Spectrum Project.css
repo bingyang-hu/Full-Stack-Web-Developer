@@ -1,0 +1,47 @@
+h4{
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	
+}
+
+table{
+	width: 70%;
+	height: 500px;
+	align-self: center;
+	margin:auto;
+
+	
+
+	
+}
+
+td{
+	border:10px white solid;
+}
+
+#first{
+	background-color: #fcf6bd;
+	margin-right: 20%;
+	
+}
+
+#second{
+	background-color: #d0f4de;
+	margin-left: 200px;
+}
+
+#third{
+
+	background-color:#a9def9;
+	margin:200px 2000px 200px 200px;
+}
+
+#fourth{
+	background-color:#e4c1f9;
+}
+
+#fifth{
+	background-color:#ff99c8;
+}
+
+

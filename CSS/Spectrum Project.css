@@ -15,6 +15,9 @@ table{
 	
 }
 
+
+/* Below is the code which is used to make each two box further away from each other.*/
+
 td{
 	border:10px white solid;
 }

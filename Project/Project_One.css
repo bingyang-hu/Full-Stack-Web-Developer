@@ -1,0 +1,44 @@
+body {
+	text-align: center; 
+	background-color: #0a0817;
+	border-style: solid;
+	border-color: #0abdc7;
+	border-width: 0 75px 75px 75px;
+    /*border: 40 px solid red; */
+
+	/*color:red;   This is for all the text!*/
+
+
+}
+
+h1 {
+	color:white;  /*A more effecient way to change color is in boy tag using color*/
+	font-style: italic;
+}
+
+h2{
+	color:white;
+}
+
+p {
+	color:white;
+}
+
+.para{
+	padding: 5% 20% 0 20%;
+}
+
+/* to make fonts inside form bigger*/
+form {
+	font-size: 1.5em;
+}
+
+#button{
+	background-color: #eb8a3f;
+	border-radius: 50px; /*To make the box curl!*/
+	height:60px;
+	width:80px;
+
+	 
+}
+

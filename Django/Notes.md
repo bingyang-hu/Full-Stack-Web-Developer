@@ -1,18 +1,20 @@
-To create a new project:
+####To create a new project:
 
-''' python
-django-admin startproject ProTwo
+'''
+ python
+django-admin startproject projectname
 
 '''
 
-To create an application inside this project:
+####To create an application inside this project:
 
-''' python
-python manage.py startapp AppTwo
+'''
+python
+python manage.py startapp Applicationname
 '''
 
 
-To create views in views.py
+####To create views in views.py
 
 '''
 from django.http import HttpResponse
@@ -32,10 +34,8 @@ To edit settings to let it know my apptwo.
 
 
 
-#create a new project:
-django-admin startproject projectname
-# create a simple application
-python manage.py startapp appname
+
+
 
 #To run the server
 python manage.py runserver

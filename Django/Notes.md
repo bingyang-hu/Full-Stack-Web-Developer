@@ -1,10 +1,9 @@
 ####To create a new project:
 
-'''
- python
+(''')
 django-admin startproject projectname
 
-'''
+(''')
 
 ####To create an application inside this project:
 

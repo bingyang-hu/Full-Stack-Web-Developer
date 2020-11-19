@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<% load static%>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User list pages</title>
+  </head>
+  <body>
+    <<h2>Here are your users:</h2>
+    <!-- user 与views.py里dict的key对应  -->
+    {%if user%}
+
+    <ol>
+      {%for person in user%}
+        <li>User Info</li>
+            <ul>
+              <li>{{person.first_name}}</li>
+              <li>{{person.last_name}}</li>
+              <li>{{person.email}}</li>
+            </ul>
+            {%endfor%}
+    </ol>
+
+    {% else %}
+    <p>OK FINE</p>
+    {% endif %}
+
+  </body>
+</html>

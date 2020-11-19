@@ -14,6 +14,7 @@ fakegen=Faker()
 
 def populate(N=5):
     for entry in range(N):
+
      fake_first_name=fakegen.first_name()
      fake_last_name=fakegen.last_name()
      fake_email=fakegen.email()

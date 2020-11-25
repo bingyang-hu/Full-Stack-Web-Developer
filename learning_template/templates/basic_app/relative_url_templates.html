@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to relative url empaltes!</h1>
+
+
+
+    <a href="{% url 'basic_app:other' %}">THE OTHER PAGE</a>
+
+    # Two things should match:
+    # 1. basic_app match urls.py- app_name
+    # 2. 'other' match urls.py -- urlpattern's name
+    <a href="{% url 'admin:index' %}">Go to ADMIN</a>
+    <a href="{% url 'index'%}"> Link to INDEX!</a>
+
+  </body>
+</html>

@@ -145,3 +145,8 @@ python manage.py createsuperuser
 2.将特定跟路径关联至app urls (project url.py)
 3.在app urls中，将url关联至某个view （app url.py)
 4.在view中创建函数，提取某些信息from model并导入某个template
+
+
+## URL Templates Inheritance
+
+Before begin any Django Project, it's always a good idea to sketch out the main idea and organization by hand!

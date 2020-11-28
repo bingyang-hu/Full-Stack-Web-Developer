@@ -150,3 +150,11 @@ python manage.py createsuperuser
 ## URL Templates Inheritance
 
 Before begin any Django Project, it's always a good idea to sketch out the main idea and organization by hand!
+
+
+## 148.Django Password:
+
+difference with folder 'static' and file 'media':
+
+static: store files you provide
+media: store files the users provide

@@ -158,3 +158,10 @@ difference with folder 'static' and file 'media':
 
 static: store files you provide
 media: store files the users provide
+
+
+## 156. Setting Up Github
+
+Git: a version control system that helps keep track of changes in your code
+
+Github: a company and web that helps manage git and hosts your files on their site

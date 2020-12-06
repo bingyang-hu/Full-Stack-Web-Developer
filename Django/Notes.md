@@ -165,3 +165,10 @@ media: store files the users provide
 Git: a version control system that helps keep track of changes in your code
 
 Github: a company and web that helps manage git and hosts your files on their site
+
+
+## 178. Social Clone Part Three
+
+from django.contrib.auth import views as auth_views
+
+Its goal is to use Django's own view: login and logout view, rather than cearting them by yourself.

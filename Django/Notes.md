@@ -1,3 +1,17 @@
+
+## No.43 BootStrap Part One - Buttons
+
+## No.44
+
+class='form-group': put spacing between components in the form.
+
+class='form-control':
+
+
+## No.118
+
+Views should be mapped to a URL in order to be seen.
+
 ### To activate virtual environment
 
 ``` conda info --envs

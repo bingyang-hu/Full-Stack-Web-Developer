@@ -12,13 +12,14 @@ class='form-control':
 
 Views should be mapped to a URL in order to be seen.
 
+## No.116
 ### To activate virtual environment
 
 ``` conda info --envs
     activate ****
 
 ```
-
+## No.117
 ### To create a new project:
 
 ``` python
@@ -96,6 +97,69 @@ url('',views.index,name='index'),
 
 
 
+## No.122
+
+TEMPLATE_DIR= '../templates/appname/index.html..'
+
+Template tags:  allow us to inject content into the HTML directly (inject DYNAMIC content that your Django's Apps' VIEWS will produce)
+
+## No.127
+
+A foreign key just denotes that the column coincides with a primary key of another table.
+
+Django create SQL database by:
+
+```
+python manage.py migrate
+```
+
+Then register the changes to your app by:
+```
+python manage.py makemigrations yourownappname
+
+```
+
+To create a superuser for admin interface
+
+Go to admin and Register
+
+then:
+```
+python manage.py createsuperuser
+```
+
+
+
+
+
+
+## 130. MTV paradigm
+
+ Django framework: model, template and views
+
+ First:  In the views.py file import any models that we will need to use.
+
+ Second: Use the view to query the model for data that we will need
+
+ Third: Pass result from the model to the template
+
+ Fourth: Edit the template so that it is ready to accept and display the data from the model
+
+ Fifth: Map a URL to the view
+
+
+## 133. Model Forms
+
+purpose: Grab information from the user's form and save it to a model. In the previous session, we only grab the information from form and did NOT save them to the model.
+
+Meta class  : provide information connecting the model to the form
+
+``` 
+class MyNewForm(forms.ModelForm) : # rather than forms.Form
+  class Meta # Connect model to the form
+    model = MyModel
+    fields= ..
+```
 
 
 
@@ -103,7 +167,10 @@ url('',views.index,name='index'),
 
 
 
-# Django框架主要关注的是模型、模板和试图，称为WTV模式。
+
+
+
+
 
 
 
@@ -131,27 +198,9 @@ INSTALLED_APPS in first_project/setting.py
 
 
 
- ### Create a model and then migrate
 
- ```
- python manage.py migrate
 
- ```
 
- ### Then register this change to application
-
-```
-python manage.py makemigrations applicationame
-
-```
-
-### To create a superuser for admin interface
-
-Go to admin and Register
-
-then:
-```
-python manage.py createsuperuser
 
 
 总的：

@@ -89,11 +89,18 @@ render函数：将user_dict内容传入到user.html这个模板。
 
 
 
-### To Map url.py
+## No.121 To Map url.py
 
 from apptwo import views
 
 url('',views.index,name='index'),
+
+path('first_app/',include(first_app.urls))
+
+It allows us to look for any url that has the pattern:
+wwww.domainname.com/first_app/...
+
+If we match that pattern, the include() function basically tells djangoto go look at the urls.py file inside of first_app folder.
 
 
 
@@ -154,7 +161,7 @@ purpose: Grab information from the user's form and save it to a model. In the pr
 
 Meta class  : provide information connecting the model to the form
 
-``` 
+```
 class MyNewForm(forms.ModelForm) : # rather than forms.Form
   class Meta # Connect model to the form
     model = MyModel
@@ -197,22 +204,40 @@ INSTALLED_APPS in first_project/setting.py
  -  render function to
 
 
+## No.141 Relative URLs Coding Examples
 
 
+## No.142 URL Template Inheritance
 
 
-
-
-总的：
-1.让project知道app
-2.将特定跟路径关联至app urls (project url.py)
-3.在app urls中，将url关联至某个view （app url.py)
-4.在view中创建函数，提取某些信息from model并导入某个template
-
-
-## URL Templates Inheritance
 
 Before begin any Django Project, it's always a good idea to sketch out the main idea and organization by hand!
+
+base.html:
+
+```
+<body>
+ {% block body_block %}
+
+ {% endblock %}
+
+</body>
+
+```
+
+other.html
+```
+<!DOCTYPE html> #this line is necessary!
+{% extends "basic_app/base.html" %}  # Remember that the TEMPLATE_DIR is to '../templates'?
+
+{% block body_block %} # 'body_block' is just a name and you can change
+
+<HTML specific for other.html>
+<HTML specific for other.html>
+
+{% endblock %}
+
+```
 
 
 ## 148.Django Password:
@@ -235,3 +260,22 @@ Github: a company and web that helps manage git and hosts your files on their si
 from django.contrib.auth import views as auth_views
 
 Its goal is to use Django's own view: login and logout view, rather than cearting them by yourself.
+
+
+## Changes with regard to different version of Django:
+
+- resolvers:
+  - current: Django.urls import reverse
+  - previous:
+
+- regular expression in path:
+  - current:
+  - prev
+
+
+
+总的：
+1.让project知道app
+2.将特定跟路径关联至app urls (project url.py)
+3.在app urls中，将url关联至某个view （app url.py)
+4.在view中创建函数，提取某些信息from model并导入某个template

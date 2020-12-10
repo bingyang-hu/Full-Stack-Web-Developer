@@ -255,6 +255,11 @@ Git: a version control system that helps keep track of changes in your code
 Github: a company and web that helps manage git and hosts your files on their site
 
 
+## No.161 Detail View and List View
+
+Connect view and template and model: list the records from  the models
+or show details of a single record.
+
 ## 178. Social Clone Part Three
 
 from django.contrib.auth import views as auth_views
@@ -271,6 +276,10 @@ Its goal is to use Django's own view: login and logout view, rather than ceartin
 - regular expression in path:
   - current:
   - prev
+
+- reverse_lazy
+  - cur: from django.urls import rever_lazy
+  - prev: from django.core.urlresolvers import reverse_lazy
 
 
 

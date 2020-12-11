@@ -274,12 +274,15 @@ Its goal is to use Django's own view: login and logout view, rather than ceartin
   - previous:
 
 - regular expression in path:
-  - current:
-  - prev
+  - current: path('by/<str:username>/<str:pk>',views.PostDetail.as_view(),name='single')
+  - prev: url(r'by/(?P<username>[-\w]+)/(?P<pk>\d+)/$',views....')
 
 - reverse_lazy
   - cur: from django.urls import rever_lazy
   - prev: from django.core.urlresolvers import reverse_lazy
+
+
+
 
 
 
@@ -288,3 +291,7 @@ Its goal is to use Django's own view: login and logout view, rather than ceartin
 2.将特定跟路径关联至app urls (project url.py)
 3.在app urls中，将url关联至某个view （app url.py)
 4.在view中创建函数，提取某些信息from model并导入某个template
+
+include(list,app_name),namespace=None. Don't write include(list,app_name= ...),no 'app_name':
+path('posts/',include(('posts.urls','posts'),namespace='posts')),
+path('groups/',include(('groups.urls','groups'),namespace='groups')),

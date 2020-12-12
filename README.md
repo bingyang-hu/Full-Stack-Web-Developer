@@ -16,4 +16,4 @@
   2. Social Media Site
 
 
-> The version of Django inside the lectures is 1.1.1 while what I use is 3.1.2, therefore some changes need to be made during the projects. Refer to Notes.md to check the details.
+> The version of Django inside the lectures is 1.1.1 while what I use is 3.1.2, therefore some changes need to be made during the projects. Refer to [Notes.md](https://github.com/bingyang-hu/Full-Stack-Web-Developer/blob/master/Django/Notes.md) to check the details.

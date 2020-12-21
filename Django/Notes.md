@@ -277,6 +277,13 @@ In Group-detail.html, it should be 'slug = group.slug' rather than 'groupS.slug'
 In Group_list.html, it should be  slug =group.slug rather than groupS.slug.
 
 
+## 189.
+To get the debug toolbar, in your virtual environment use:
+
+```
+ pip install django-debug-toolbar
+```
+
 ## Changes with regard to different version of Django:
 
 - resolvers:

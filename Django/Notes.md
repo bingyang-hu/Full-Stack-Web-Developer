@@ -292,6 +292,10 @@ In Group_list.html, it should be  slug =group.slug rather than groupS.slug.
   - prev: from django.core.urlresolvers import reverse_lazy
 
 
+- load staticfiles
+  - cur: {% load static %}
+  - prev: {% load staticfiles %}
+
 
 
 

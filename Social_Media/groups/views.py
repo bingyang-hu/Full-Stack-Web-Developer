@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+from . import models
 from django.contrib.auth.mixins import (LoginRequiredMixin,
                                         PermissionRequiredMixin)
 # Create your views here.
@@ -51,7 +52,7 @@ class LeaveGroup(LoginRequiredMixin,generic.RedirectView):
                 try:
                     membership = models.GroupMember.objects.filter(
                         user = self.request.user,
-                        group_slug = self.kwargs.get('slug')
+                        group__slug = self.kwargs.get('slug')
 
                     ).get()
                 except models.GroupMember.DoesNotExist:

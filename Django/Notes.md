@@ -266,6 +266,16 @@ from django.contrib.auth import views as auth_views
 
 Its goal is to use Django's own view: login and logout view, rather than cearting them by yourself.
 
+## 187 Debug
+
+## Tortued by slug:::
+
+The problem I found:
+
+In Group-detail.html, it should be 'slug = group.slug' rather than 'groupS.slug'
+
+In Group_list.html, it should be  slug =group.slug rather than groupS.slug.
+
 
 ## Changes with regard to different version of Django:
 

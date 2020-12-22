@@ -283,6 +283,12 @@ To get the debug toolbar, in your virtual environment use:
 ```
  pip install django-debug-toolbar
 ```
+## 191.
+``` python
+def __str__(self):
+  return self.title
+
+```
 
 ## Changes with regard to different version of Django:
 

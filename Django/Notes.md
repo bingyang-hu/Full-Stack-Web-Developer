@@ -8,6 +8,15 @@ class='form-group': put spacing between components in the form.
 class='form-control':
 
 
+## No.48
+
+thumbnail class is really useful!!
+
+```html
+<img src="..." class="rounded float-start" alt="...">
+<img src="..." class="rounded float-end" alt="...">
+```
+
 ## No.118
 
 Views should be mapped to a URL in order to be seen.

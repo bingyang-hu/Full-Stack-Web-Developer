@@ -17,6 +17,8 @@ thumbnail class is really useful!!
 <img src="..." class="rounded float-end" alt="...">
 ```
 
+
+
 ## No.118
 
 Views should be mapped to a URL in order to be seen.

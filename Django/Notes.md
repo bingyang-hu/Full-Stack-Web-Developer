@@ -18,6 +18,30 @@ thumbnail class is really useful!!
 ```
 
 
+## No.69 JS- object
+
+Object in JS is actually dictionary in Python, not the obj in java.
+
+## No.72 Object exercise
+
+how to write a function:
+
+```
+
+var employee = {
+  name: "John Smith",
+  job: "Programmer",
+  age: 31,
+  alertFunc : function() {
+    alert("Name is "+this.name +" ,Job is "+this.job + ", Age is "+ this.age);
+  }
+}
+
+
+```
+
+'this' should be used. 
+
 
 ## No.118
 
